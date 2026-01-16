@@ -8,7 +8,7 @@ dataset = pd.read_csv('dataset.csv', sep="\t", names=['text', 'Category'], heade
 client = OpenAI(
     # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
     # https://bailian.console.aliyun.com/?tab=model#/api-key
-    api_key="sk-e1b4d6b63d094cf9a416b34e1fd2d72e",
+    api_key="sk-e1b4d6b63d0xxxxxb34e1fd2d72e",
 
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
@@ -44,3 +44,4 @@ if __name__ == '__main__':
     #取任意一条数据进行访问
     result = query(dataset['text'][0])
     print(result)
+
